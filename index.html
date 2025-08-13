@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>XO vs AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tic-Tac-Toe with AI (Normal / Hard / Nightmare)">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>XO vs AI</h1>
+
+    <section class="controls">
+      <div class="difficulty">
+        <button id="btn-normal">Normal</button>
+        <button id="btn-hard">Hard</button>
+        <button id="btn-nightmare">Nightmare 😱</button>
+      </div>
+      <div class="status">
+        <span id="mode-label">โหมด: Nightmare</span>
+      </div>
+    </section>
+
+    <section class="board" id="board" aria-label="Tic Tac Toe Board">
+      <!-- 9 ช่อง จะถูกเติมด้วย JS -->
+    </section>
+
+    <section class="score-panel">
+      <div class="score">คุณ: <span id="you">0</span></div>
+      <div class="score">AI: <span id="ai">0</span></div>
+      <div class="score">เสมอ: <span id="draw">0</span></div>
+    </section>
+
+    <section class="actions">
+      <button id="btn-reset-board">เริ่มตาใหม่</button>
+      <button id="btn-reset-score">รีเซ็ตคะแนน</button>
+    </section>
+
+    <dialog id="result-dialog">
+      <p id="result-text"></p>
+      <form method="dialog">
+        <button>ตกลง</button>
+      </form>
+    </dialog>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
